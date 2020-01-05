@@ -3,7 +3,7 @@
  * File Created: Thursday, 12th December 2019 8:28:07 pm
  * Author: Alex Chomiak 
  * 
- * Last Modified: Friday, 3rd January 2020 1:42:06 pm
+ * Last Modified: Sunday, 5th January 2020 4:45:45 pm
  * Modified By: Alex Chomiak 
  * 
  * Author Github: https://github.com/alexchomiak
@@ -48,5 +48,14 @@
         color: white;
         font-style: italic;
         font-weight: 300;
+    }
+
+    @media only screen and (max-width: 768px) {
+        h1 {
+            display: none;
+        }
+        p {
+            display: none;
+        }
     }
 }

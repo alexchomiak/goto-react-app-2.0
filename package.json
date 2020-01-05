@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
+    "homepage": "https://alexchomiak.github.io/goto-react-app-2.0/",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "webpack-dashboard -m -t 'GoTo React App' -- webpack-dev-server src --inline --config ./config/webpack.development.config.js --open",
