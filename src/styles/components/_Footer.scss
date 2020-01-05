@@ -1,0 +1,40 @@
+/*
+ * File: /src/styles/components/_Footer.scss
+ * File Created: Sunday, 5th January 2020 3:16:46 pm
+ * Author: Alex Chomiak 
+ * 
+ * Last Modified: Sunday, 5th January 2020 3:47:55 pm
+ * Modified By: Alex Chomiak 
+ * 
+ * Author Github: https://github.com/alexchomiak
+ */
+
+.footer {
+    margin: 0 auto;
+    text-align: center;
+
+    i {
+        display: inline;
+        color: red;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+        color: $secondaryColor;
+        animation: wiggle 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 2.5s;
+        font-weight: 300;
+    }
+
+    width: 40rem;
+    padding: 0.5rem 0;
+}
+
+.footer-container {
+    width: 100%;
+    position: fixed;
+    bottom: 0rem;
+    margin: 0;
+    padding: 0;
+}

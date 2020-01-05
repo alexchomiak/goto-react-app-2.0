@@ -1,0 +1,36 @@
+/*
+ * File: /src/styles/components/_Page.scss
+ * File Created: Friday, 3rd January 2020 10:05:31 am
+ * Author: Alex Chomiak 
+ * 
+ * Last Modified: Friday, 3rd January 2020 12:57:50 pm
+ * Modified By: Alex Chomiak 
+ * 
+ * Author Github: https://github.com/alexchomiak
+ */
+
+.page {
+    display: block;
+
+    margin: 1rem auto;
+    margin-top: 8rem;
+    width: calc(100% - 2rem);
+    //background: lighten($backgroundColor, 10%);
+    border-radius: 1rem;
+}
+
+.page-fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+
+.page-fade-enter.page-fade-enter-active {
+    opacity: 1;
+    transition: all 350ms ease-in-out;
+}
+
+.page-fade-exit {
+    opacity: 0;
+    z-index: -10;
+    transition: all 350ms ease-in-out;
+}

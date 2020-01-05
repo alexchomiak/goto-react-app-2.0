@@ -1,0 +1,41 @@
+/*
+ * File: /src/styles/App.scss
+ * File Created: Thursday, 12th December 2019 8:31:06 pm
+ * Author: Alex Chomiak 
+ * 
+ * Last Modified: Sunday, 5th January 2020 3:35:38 pm
+ * Modified By: Alex Chomiak 
+ * 
+ * Author Github: https://github.com/alexchomiak
+ */
+
+// * Normalizes fontsize for REM, 1REM = 10px
+html {
+    font-size: 62.5%;
+}
+
+// * App font file
+@font-face {
+    font-family: 'Nunito';
+    src: url('/Nunito.ttf');
+}
+
+body {
+    background: $backgroundColor;
+}
+
+.transition-group {
+    position: relative;
+}
+
+.route-section {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-bottom: 2rem;
+}
+
+::-webkit-scrollbar {
+    width: 0px; // * Hide Scrollbar
+}

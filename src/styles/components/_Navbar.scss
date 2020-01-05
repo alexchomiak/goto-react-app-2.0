@@ -1,0 +1,61 @@
+/*
+ * File: /src/styles/components/_Navbar.scss
+ * File Created: Monday, 23rd December 2019 11:09:10 am
+ * Author: Alex Chomiak 
+ * 
+ * Last Modified: Friday, 3rd January 2020 3:52:45 pm
+ * Modified By: Alex Chomiak 
+ * 
+ * Author Github: https://github.com/alexchomiak
+ */
+
+.nav-bar {
+    display: inline-flex;
+    justify-content: center;
+    flex-grow: 2;
+    font-size: 2rem;
+    font-weight: 100;
+
+    .nav-bar-link {
+        position: relative;
+        width: 8rem;
+        text-align: center;
+    }
+
+    a {
+        color: white;
+        transition: all 250ms;
+        text-decoration: none;
+        font-style: italic;
+    }
+
+    a:hover {
+        color: darken(white, 10%);
+        text-decoration: none;
+        font-weight: 400;
+    }
+    .nav-bar-link::before {
+        border-radius: 50%;
+        position: absolute;
+        background: white;
+        bottom: 0px;
+        content: '';
+        border: none;
+        opacity: 0.3;
+        width: 5px;
+        height: 4px;
+        transition: all 300ms ease-in;
+        left: 50%;
+        transform: translateY(110%) translateX(-50%) scale(1);
+    }
+
+    .nav-bar-link--active {
+        color: darken(white, 10%);
+        text-decoration: none;
+        font-weight: 400;
+        transition: all 250ms;
+    }
+    .nav-bar-link--active::before {
+        opacity: 0.85;
+    }
+}

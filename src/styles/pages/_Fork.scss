@@ -1,0 +1,49 @@
+/*
+ * File: /src/styles/pages/_Fork.scss
+ * File Created: Friday, 3rd January 2020 1:37:55 pm
+ * Author: Alex Chomiak 
+ * 
+ * Last Modified: Friday, 3rd January 2020 1:58:56 pm
+ * Modified By: Alex Chomiak 
+ * 
+ * Author Github: https://github.com/alexchomiak
+ */
+
+.fork {
+    .git {
+        display: inline;
+        width: 75px;
+        margin-right: 1.5rem;
+        animation: shake 2s;
+        animation-iteration-count: infinite;
+        cursor: pointer;
+    }
+
+    section {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        font-style: italic;
+        color: $secondaryColor;
+        font-weight: 300;
+    }
+    p {
+        font-weight: 200;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .star {
+        animation: wiggle 5s;
+        animation-iteration-count: infinite;
+        text-align: center;
+        font-style: italic;
+        color: $secondaryColor;
+        font-weight: 200;
+        font-size: 2rem;
+    }
+}

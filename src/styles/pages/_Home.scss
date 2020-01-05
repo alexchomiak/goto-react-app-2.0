@@ -1,0 +1,46 @@
+/*
+ * File: /src/styles/pages/_Home.scss
+ * File Created: Friday, 3rd January 2020 10:29:32 am
+ * Author: Alex Chomiak 
+ * 
+ * Last Modified: Friday, 3rd January 2020 2:46:25 pm
+ * Modified By: Alex Chomiak 
+ * 
+ * Author Github: https://github.com/alexchomiak
+ */
+
+.home {
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        font-style: italic;
+        color: $secondaryColor;
+        font-weight: 300;
+    }
+    p {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 100;
+        color: $secondaryColor;
+        font-style: italic;
+        margin: 0 auto;
+        animation: wiggle 5s;
+        animation-iteration-count: infinite;
+    }
+    a {
+        text-decoration: none !important;
+    }
+
+    img.atom {
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+
+        opacity: 0.7;
+        animation-name: AtomAnimation;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
