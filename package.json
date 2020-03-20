@@ -6,7 +6,7 @@
     "homepage": "https://alexchomiak.github.io/goto-react-app-2.0/",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "webpack-dashboard -m -t 'GoTo React App' -- webpack-dev-server src --inline --config ./config/webpack.development.config.js --open",
+        "start": "webpack-dev-server src --inline --config ./config/webpack.development.config.js --open",
         "refresh": "node ./scripts/refresh.js",
         "build": "webpack --config ./config/webpack.production.config.js",
         "buildlib": "webpack --config ./config/webpack.library.config.js"
@@ -50,7 +50,6 @@
         "typescript": "^3.8.3",
         "webpack": "^4.42.0",
         "webpack-cli": "^3.3.11",
-        "webpack-dashboard": "^3.2.0",
         "webpack-dev-server": "^3.10.3"
     }
 }
