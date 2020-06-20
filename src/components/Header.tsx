@@ -10,29 +10,30 @@
  */
 
 import React, { FC, useEffect } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-import { State } from '@redux/store'
-import { updateTime } from '@actions/time'
+import { useSelector, useDispatch } from '@redux/.'
+import { updateTime } from '@redux/time/thunk'
 import Logo from '@assets/Logo.png'
 import { TimeObject } from '@interfaces/TimeObject'
 import { NavBar } from './NavBar'
 import { PageRoute } from '@interfaces/AnimatedSwitch'
+
+
 export const Header: FC<{ pages: PageRoute[] }> = ({ pages }: { pages: PageRoute[] }) => {
     // * Retrieve Current Time From Redux Store
-    const time: TimeObject = useSelector((state: State) => state.time.currentTime)
+    const time: TimeObject = useSelector(state => state.time.currentTime)
     const dispatch = useDispatch()
 
     useEffect(() => {
         // ! Note: useEffect emulates componentDidMount, componentDidUpdate, and componentWillUnmount
         if (time.unixtime == 0) {
-            dispatch(updateTime)
+            dispatch(updateTime())
         } else {
             // * Dispatch Update for time every 5 seconds
             setTimeout(() => {
                 // * This is just an example of how to integrate a redux store / use api requests
                 // * Look through the redux code in the models directory and see the setup and how to
                 // * Link data to your react components.
-                dispatch(updateTime)
+                dispatch(updateTime())
             }, 5000)
         }
 
