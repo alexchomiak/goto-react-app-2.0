@@ -15,7 +15,7 @@ import { App } from './App'
 import { Provider } from 'react-redux'
 
 // ! Configure Redux Store
-import { store } from './models/redux/store'
+import { store } from './models/redux'
 
 // * Import styles
 import './styles/index.scss'
